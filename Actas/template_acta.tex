@@ -1,0 +1,54 @@
+\documentclass{caitemplate}
+
+\newcommand{\fecha}{rellenar fecha aca}
+\newcommand{\tipoacta}{Ordinario}
+
+\fancyfoot[L]{
+    % Left header
+    \rule[2\baselineskip]{0pt}{0pt}
+    % Strut to ensure a 1/4 \baselineskip between image and header rule
+    \includegraphics[height=3\baselineskip,valign=c]{cai.png}
+    % Space
+    \parbox[b]{15cm}{
+        \centering Centro de Alumnos $\|$ Escuela de Ingeniería $\|$ Pontificia Universidad Católica de Chile \\ (56-2) 2354 4759 $\|$ \textbf{\href{http://www.cai.cl}{http://www.cai.cl}}  $\|$ \textbf{\href{mailto:contacto@cai.cl}{contacto@cai.cl}} $\|$ \fecha
+        } \hfill
+}
+
+\setlength\parindent{0pt}
+
+\begin{document}
+    \fancytitle{Acta Consejo Generacional \tipoacta}{\fecha}
+
+    \tableofcontents
+    \newpage
+
+    \section{Asistencia}
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{lr}
+                \toprule
+                \textbf{Asistentes} & \textbf{Ausentes} \\
+                \midrule
+
+                \bottomrule
+            \end{tabular}
+        \end{table}
+
+    \section{Poderes}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{lr}
+                \toprule
+                \textbf{Nombre} & \textbf{Deja poder a} \\
+                \midrule
+
+                \bottomrule
+            \end{tabular}
+        \end{table}
+
+    \section{Tema a hablar}
+
+
+
+\end{document}
